@@ -179,3 +179,8 @@ article h1 {
   width: 20px;
   height: 16px;
 }
+.tiptap p,
+.tiptap ol,
+.tiptap ul {
+  margin: 0 0 12px;
+}
