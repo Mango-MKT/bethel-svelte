@@ -149,7 +149,8 @@ article h1 {
 .editor-menu > div {
   display: flex;
 }
-.editor-menu button {
+.editor-menu button,
+.editor-menu .menu-btn {
   padding: 3px 5px;
   line-height: 30px;
   height: 30px;
@@ -162,11 +163,14 @@ article h1 {
   align-items: center;
   align-content: center;
   justify-content: center;
+  position: relative;
+  box-sizing: border-box;
 }
 .editor-menu button .hdrs {
   text-transform: uppercase;
 }
-.editor-menu button:hover {
+.editor-menu button:hover,
+.editor-menu .menu-btn:hover {
   background-color: #fff;
 }
 .editor-menu button:hover svg path,
@@ -183,4 +187,67 @@ article h1 {
 .tiptap ol,
 .tiptap ul {
   margin: 0 0 12px;
+}
+.highlight-options {
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  width: 90px;
+  transform: translateY(100%);
+  z-index: 111;
+  left: 0;
+  border: 1px solid #ccc;
+  display: none;
+  flex-wrap: wrap;
+}
+.highlight-options button {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  min-width: 30px;
+}
+.highlight-select:hover .highlight-options {
+  display: flex;
+}
+.highlight-options .bee-keeper {
+  background-color: #ffeb3b;
+}
+.highlight-options .nectarine {
+  background-color: #ffbe76;
+}
+.highlight-options .pink {
+  background-color: #ff7979;
+}
+.highlight-options .june-bud {
+  background-color: #badc58;
+}
+.highlight-options .coastal-breeze {
+  background-color: #dff9fb;
+}
+.highlight-options .heliotrope {
+  background-color: #e056fd;
+}
+.highlight-options .bee-keeper:hover {
+  background-color: #f9ca24;
+}
+.highlight-options .nectarine:hover {
+  background-color: #f0932b;
+}
+.highlight-options .pink:hover {
+  background-color: #eb4d4b;
+}
+.highlight-options .june-bud:hover {
+  background-color: #6ab04c;
+}
+.highlight-options .coastal-breeze:hover {
+  background-color: #7ed6df;
+}
+.highlight-options .heliotrope:hover {
+  background-color: #be2edd;
+}
+.highlight-options button {
+  box-shadow: 0 0 0px 3px #fff inset;
+}
+.highlight-options button.is-active {
+  box-shadow: 0 0 0px 3px #30336b inset;
 }
